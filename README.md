@@ -1,19 +1,19 @@
 
-# OpenColor Gradient
+# Portfolio Website Design
 
 As a free gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile
 
-![Logo](https://gradient.opencolor.co/opencolor.png)
+![Logo](https://arjunpatidar.me/photo.png)
 
 
 ## Demo
 
 Link to demo
-https://gradient.opencolor.co/
+https://arjunpatidar.me/
 
 ## Authors
 
-- [@arjunpatidarofficial](https://www.github.com/octokatherine)
+- [@arjunpatidarofficial](https://www.github.com/arjunpatidar0fficial)
 
 ## 🚀 About Me
 I'm a full stack developer...
