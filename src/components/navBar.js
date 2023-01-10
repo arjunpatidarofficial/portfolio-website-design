@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = ({ aboutRef }) => {
+const Navbar = ({ aboutRef, skillsRef, educationRef, expRef }) => {
   const navigation = useNavigate();
 
   return (
-    <div className="flex flex-row justify-between bg-white border-b border-black px-16 pb-5 pt-2">
+    <div className="flex flex-row justify-between bg-white border-b border-black px-16 pb-5 pt-2  fixed sm:relative h-20 w-full">
       <div className="flex flex-row w-full justify-center sm:justify-start items-end">
         <p
           onClick={() => {
@@ -32,7 +32,6 @@ const Navbar = ({ aboutRef }) => {
             const elmnt = aboutRef;
             elmnt.current.scrollIntoView({
               behavior: "smooth",
-              block: "center",
               inline: "start",
             });
           }}
@@ -40,11 +39,42 @@ const Navbar = ({ aboutRef }) => {
         >
           About
         </p>
-        <p className="text-black">Skills</p>
-        <p className="text-black">Education</p>
-        <p className="text-black">Work</p>
-        <p className="text-black">Experience</p>
-        <p className="text-black">Contact</p>
+        <p
+          onClick={() => {
+            const elmnt = skillsRef;
+            elmnt.current.scrollIntoView({
+              behavior: "smooth",
+              inline: "start",
+            });
+          }}
+          className="text-black"
+        >
+          Skills
+        </p>
+        <p
+          onClick={() => {
+            const elmnt = educationRef;
+            elmnt.current.scrollIntoView({
+              behavior: "smooth",
+              inline: "start",
+            });
+          }}
+          className="text-black"
+        >
+          Education
+        </p>
+        <p
+          onClick={() => {
+            const elmnt = expRef;
+            elmnt.current.scrollIntoView({
+              behavior: "smooth",
+              inline: "start",
+            });
+          }}
+          className="text-black"
+        >
+          Experience
+        </p>
       </div>
     </div>
   );

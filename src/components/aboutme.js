@@ -9,7 +9,10 @@ const AboutMe = ({ aboutRef }) => {
       </div>
       <div className="py-10 flex flex-col sm:flex-row">
         <div className="w-full sm:w-2/5 flex justify-center items-center">
-          <img className="w-64 rounded-md shadow-lg" src="/photo.png"></img>
+          <img
+            className="w-64 rounded-md shadow-lg border-4 border-orange-500"
+            src="/photo.png"
+          ></img>
         </div>
         <div className=" w-full flex flex-col items-start mt-10 sm:mt-0 sm:w-3/5 px-10 sm:pl-10 sm:pr-28">
           <p className="text-xl font-bold">Arjun Patidar</p>
@@ -62,4 +65,4 @@ const AboutMe = ({ aboutRef }) => {
   );
 };
 
-export default forwardRef(AboutMe);
+export default AboutMe;

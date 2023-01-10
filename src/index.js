@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Project from "./pages/Project";
+import ProjectView from "./pages/ProjectView";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/achievement" element={<Achievement />} />
         <Route path="/projects" element={<Project />} />
+        <Route path="/projectView" element={<ProjectView />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

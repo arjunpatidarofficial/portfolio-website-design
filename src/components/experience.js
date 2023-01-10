@@ -1,16 +1,19 @@
 import React from "react";
 import { ExperienceList } from "../data/experienceList";
 
-const Experience = () => {
+const Experience = ({ expRef }) => {
   return (
     <div>
-      <div className=" flex flex-col justify-center items-center my-10 text-black">
+      <div
+        className=" flex flex-col justify-center items-center my-10 text-black "
+        ref={expRef}
+      >
         <p className=" font-medium text-2xl">Work Experience</p>
         {/* experience comapny card */}
         <div className="w-full sm:w-1/2 mt-10 px-10 space-y-10">
-          {ExperienceList.map((experience, index) => {
+          {ExperienceList.map((experience) => {
             return (
-              <div key={index} className="border-b pb-8">
+              <div key={experience.id} className="border-b pb-8">
                 <p className="font-medium">{experience.position}</p>
                 <p className="font-medium">{experience.companyName}</p>
                 <div className="flex flex-row justify-between mt-1 text-sm">

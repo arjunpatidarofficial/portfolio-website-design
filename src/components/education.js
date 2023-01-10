@@ -1,9 +1,12 @@
 import React from "react";
 
-const Education = () => {
+const Education = ({ educationRef }) => {
   return (
-    <div className=" border-b border-black bg-gray-50 px-5 sm:px-0 py-10">
-      <div className=" flex flex-col justify-center items-center h-16  text-black">
+    <div className=" border-b border-black bg-gray-50 px-5 sm:px-0 py-10 ">
+      <div
+        className=" flex flex-col justify-center items-center h-16  text-black"
+        ref={educationRef}
+      >
         <p className=" font-medium text-2xl">Education</p>
         <p className=" font-medium text-sm mt-2 text-gray-500">
           Education Is Not The Learning Of Facts, But The Training Of The Mind

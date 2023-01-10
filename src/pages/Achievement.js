@@ -5,9 +5,9 @@ import Footer from "../components/footer";
 
 const Achievement = (props) => {
   return (
-    <div>
+    <div className="overflow-y-auto customScroll h-screen">
       <Navbar />
-      <div className="border-b  bg-gray-50">
+      <div className="border-b  bg-gray-50 pt-20 sm:pt-0 ">
         <div className=" flex justify-center items-center h-24 text-black ">
           <p className=" font-medium text-2xl">Achievements</p>
         </div>

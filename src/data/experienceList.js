@@ -1,7 +1,8 @@
 export const ExperienceList = [
   {
+    id: 1,
     companyName: "Bimaxpress",
-    time: "Oct 2020 - Dec 2021",
+    time: "Jan 2022 - Aug 2022",
     position: "Senior Product Engineer",
     location: "Benglore, India",
     Accomplishments: [
@@ -11,8 +12,9 @@ export const ExperienceList = [
     link: "https://emixchange.com/",
   },
   {
+    id: 2,
     companyName: "Nuvocliniq",
-    time: "Jan 2022 - Aug 2022",
+    time: "Oct 2020 - Dec 2021",
     position: "Product Engineer and Tech Lead",
     location: "Bhopal, India",
     Accomplishments: [
@@ -22,6 +24,7 @@ export const ExperienceList = [
     link: "https://nuvocliniq.in/",
   },
   {
+    id: 3,
     companyName: "SmartUp TechnoSoft LLP",
     time: "Nov 2018- Nov 2020",
     position: "Co-Founder & CTO",

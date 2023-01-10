@@ -10,15 +10,23 @@ import { useRef } from "react";
 function Home() {
   const navigation = useNavigate();
   const aboutRef = useRef();
+  const skillsRef = useRef();
+  const educationRef = useRef();
+  const expRef = useRef();
 
   return (
     <div className="App bg-white h-screen overflow-y-auto customScroll">
       <header>
-        <Navbar aboutRef={aboutRef} />
+        <Navbar
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          educationRef={educationRef}
+          expRef={expRef}
+        />
       </header>
       <div
         onClick={() => navigation("/achievement")}
-        className="py-2 px-5 bg-orange-600 flex justify-center cursor-pointer items-center border-b border-black"
+        className="py-2 px-5 bg-orange-600 flex justify-center cursor-pointer items-center border-b border-black sm:mt-0 mt-20"
       >
         <p className="text-white text-center text-base">
           ABDM Hacketon series round-1 Inovation challenge 2,7,8 winner
@@ -33,7 +41,16 @@ function Home() {
           </p>
           <p className="text-xl font-medium">I Am Full Stack Developer</p>
           <div className="pt-3">
-            <button className="bg-orange-500 font-medium shadow-lg w-24 text-white py-1.5">
+            <button
+              onClick={() => {
+                aboutRef.current.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                  inline: "start",
+                });
+              }}
+              className="bg-orange-500 font-medium shadow-lg w-24 text-white py-1.5"
+            >
               Hire me
             </button>
             <button
@@ -69,9 +86,9 @@ function Home() {
         </div>
       </div>
       <AboutMe aboutRef={aboutRef} />
-      <Skills />
-      <Education />
-      <Experience />
+      <Skills skillsRef={skillsRef} />
+      <Education educationRef={educationRef} />
+      <Experience expRef={expRef} />
       <Footer />
     </div>
   );
