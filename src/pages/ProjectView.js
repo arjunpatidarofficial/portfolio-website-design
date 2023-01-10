@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../components/navBar";
 import Footer from "../components/footer";
+import { memo } from "react";
 
 const ProjectView = ({ route }) => {
   const { state } = useLocation();
@@ -62,4 +63,4 @@ const ProjectView = ({ route }) => {
   );
 };
 
-export default ProjectView;
+export default memo(ProjectView);

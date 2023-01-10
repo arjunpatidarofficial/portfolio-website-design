@@ -1,5 +1,6 @@
 import React from "react";
 import { ExperienceList } from "../data/experienceList";
+import { memo } from "react";
 
 const Experience = ({ expRef }) => {
   return (
@@ -56,4 +57,4 @@ const Experience = ({ expRef }) => {
     </div>
   );
 };
-export default Experience;
+export default memo(Experience);

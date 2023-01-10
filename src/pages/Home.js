@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import Experience from "../components/experience";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import { memo } from "react";
 
 function Home() {
   const navigation = useNavigate();
@@ -29,7 +30,7 @@ function Home() {
         className="py-2 px-5 bg-orange-600 flex justify-center cursor-pointer items-center border-b border-black sm:mt-0 mt-20"
       >
         <p className="text-white text-center text-base">
-          ABDM Hacketon series round-1 Inovation challenge 2,7,8 winner
+          ABDM Hackathon series round-1 Inovation challenge 2,7,8 winner
           <i className="fa-solid fa-circle-chevron-right text-sm ml-2"></i>
         </p>
       </div>
@@ -64,17 +65,35 @@ function Home() {
           </div>
 
           <div className="flex items-start py-2 gap-x-3 text-sm">
-            <div className="bg-white border border-gray-100 w-8 h-8 p-1.5 rounded-full shadow-lg">
-              <img className="" src="/twitter.png"></img>
-            </div>
+            <a
+              className=""
+              href="https://www.linkedin.com/in/arjun-patidar-3a0395135/"
+              target="_blank"
+            >
+              <div className="bg-white border flex justify-center text-xl items-center border-gray-100 w-8 h-8 rounded-full shadow-lg">
+                <i className="fa-brands fa-linkedin text-blue-500"></i>
+              </div>
+            </a>
 
-            <div className="bg-white border border-gray-100 w-8 h-8 p-1.5 rounded-full shadow-lg">
-              <img className="" src="/instagram.png"></img>
-            </div>
+            <a
+              className=""
+              href="https://github.com/arjunpatidarofficial"
+              target="_blank"
+            >
+              <div className="bg-white border flex justify-center text-xl items-center border-gray-100 w-8 h-8 rounded-full shadow-lg">
+                <i className="fa-brands fa-github text-xl"></i>
+              </div>
+            </a>
 
-            <div className="bg-white border border-gray-100  w-8 h-8 p-1.5  rounded-full shadow-lg">
-              <img className="" src="/linkedin.png"></img>
-            </div>
+            <a
+              className=""
+              href="https://dribbble.com/arjupatidarofficial"
+              target="_blank"
+            >
+              <div className="bg-white border flex justify-center text-xl items-center border-gray-100 w-8 h-8 rounded-full shadow-lg">
+                <i className="fa-brands fa-dribbble text-lg text-red-500"></i>
+              </div>
+            </a>
 
             {/* <div className="bg-white  w-8 h-8 p-1.5  rounded-full shadow-lg">
                 <img className="w-8" src="/github.png"></img>
@@ -89,9 +108,14 @@ function Home() {
       <Skills skillsRef={skillsRef} />
       <Education educationRef={educationRef} />
       <Experience expRef={expRef} />
-      <Footer />
+      <Footer
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        educationRef={educationRef}
+        expRef={expRef}
+      />
     </div>
   );
 }
 
-export default Home;
+export default memo(Home);

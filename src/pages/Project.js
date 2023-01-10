@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/navBar";
 import { projectsList } from "../data/projectsList";
 import { useNavigate } from "react-router-dom";
+import { memo } from "react";
 
 const Project = () => {
   const projectType = [
@@ -60,4 +61,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default memo(Project);

@@ -1,5 +1,6 @@
 import React from "react";
 import { skillsList } from "../data/skillsList";
+import { memo } from "react";
 
 const Skills = ({ skillsRef }) => {
   return (
@@ -27,4 +28,4 @@ const Skills = ({ skillsRef }) => {
   );
 };
 
-export default Skills;
+export default memo(Skills);

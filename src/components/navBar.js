@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { memo } from "react";
 
 const Navbar = ({ aboutRef, skillsRef, educationRef, expRef }) => {
   const navigation = useNavigate();
@@ -80,4 +81,4 @@ const Navbar = ({ aboutRef, skillsRef, educationRef, expRef }) => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);

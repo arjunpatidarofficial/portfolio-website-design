@@ -1,4 +1,5 @@
 import React from "react";
+import { memo } from "react";
 
 const Education = ({ educationRef }) => {
   return (
@@ -37,4 +38,4 @@ const Education = ({ educationRef }) => {
   );
 };
 
-export default Education;
+export default memo(Education);

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Navbar from "../components/navBar";
 import Footer from "../components/footer";
+import { memo } from "react";
 
 const Achievement = (props) => {
   return (
@@ -159,4 +160,4 @@ const Achievement = (props) => {
 
 Achievement.propTypes = {};
 
-export default Achievement;
+export default memo(Achievement);

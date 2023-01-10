@@ -1,5 +1,5 @@
 import React from "react";
-import { forwardRef } from "react";
+import { memo } from "react";
 
 const AboutMe = ({ aboutRef }) => {
   return (
@@ -10,7 +10,7 @@ const AboutMe = ({ aboutRef }) => {
       <div className="py-10 flex flex-col sm:flex-row">
         <div className="w-full sm:w-2/5 flex justify-center items-center">
           <img
-            className="w-64 rounded-md shadow-lg border-4 border-orange-500"
+            className="w-64 rounded-md shadow-lg border-2 border-orange-500"
             src="/photo.png"
           ></img>
         </div>
@@ -56,13 +56,19 @@ const AboutMe = ({ aboutRef }) => {
             </div>
           </div>
 
-          <button className="bg-orange-500 rounded mt-7 sm:mt-3 font-medium shadow-lg w-32 text-white py-1.5">
-            Get Resume
-          </button>
+          <a
+            className=" cursor-pointer"
+            href="https://firebasestorage.googleapis.com/v0/b/arjunpatidar-me.appspot.com/o/arjun-patidar-resume.pdf?alt=media&token=655d9e07-5f76-48be-aa7e-71697ebf7b64"
+            target="_blank"
+          >
+            <button className="bg-orange-500 rounded mt-7 sm:mt-3 font-medium shadow-lg w-32 text-white py-1.5">
+              Get Resume
+            </button>
+          </a>
         </div>
       </div>
     </div>
   );
 };
 
-export default AboutMe;
+export default memo(AboutMe);
