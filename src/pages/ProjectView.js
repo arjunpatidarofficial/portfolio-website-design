@@ -11,7 +11,7 @@ const ProjectView = ({ route }) => {
   return (
     <div>
       <Navbar />
-      <div className="w-full flex flex-col items-center py-10 px-5 sm:px-20 sm:pt-10 pt-28">
+      <div className="w-full flex flex-col items-center py-10 px-5 sm:px-20 sm:pt-10 pt-28 dark:bg-base dark:text-white">
         <div className="w-full sm:w-1/2 flex flex-col items-center space-y-5">
           <img className="w-14 h-14 rounded-md" src={state?.logo}></img>
           <p className=" font-bold ml-2 text-lg ">{state?.name}</p>
@@ -23,14 +23,14 @@ const ProjectView = ({ route }) => {
             >
               View Live Project
             </a>
-            <a
+            {/* <a
               className="bg-black text-white p-2 rounded text-xs cursor-pointer"
               target="_blank"
               href={state?.github}
             >
               Get Source Code
               <i className="fa-brands fa-github ml-2"></i>
-            </a>
+            </a> */}
           </div>
           <img
             className="border border-black rounded w-full"
@@ -39,7 +39,7 @@ const ProjectView = ({ route }) => {
           <div className="flex space-x-3 w-full">
             {state?.technology?.map((technology) => {
               return (
-                <p className="text-xs p-1.5 bg-orange-500 rounded text-white">
+                <p className="text-xs p-1.5 bg-customorange rounded text-white">
                   {technology}
                 </p>
               );

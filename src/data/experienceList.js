@@ -1,8 +1,23 @@
 export const ExperienceList = [
   {
+    id: 0,
+    companyName: "Appointy",
+    time: "Jan 2022 - Present",
+    icon: "https://play-lh.googleusercontent.com/UkT3SMt6QE9xqh8ZZhzra_5j9CGx88aitu8Um_CsroiJg23qUZAUNS6q2Y2i02kwsdg",
+    position: "Software Engineer 1",
+    location: "Bhopal, India",
+    Accomplishments: [
+      "Contributing as independent developer of organization’s scheduling solution for Google called REWS and maintaining, debugging and implementing new features as required for the same",
+      "Increasing efficiency and speed of the overall project by identifying & resolving a chain of critical bugs (P0) in the architecture of the project along with team members",
+      "Technologies - Angular, JavaScript, TypeScript and HTML",
+    ],
+    link: "https://appointy.com/",
+  },
+  {
     id: 1,
     companyName: "Bimaxpress",
     time: "Jan 2022 - Aug 2022",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm5zi2zSpsiFeiZARDrAfk7Y4S1PtyctfhmcfrJ5-hSmLlpTe_XGGnahGTBMLMg-1T-Qk&usqp=CAU",
     position: "Senior Product Engineer",
     location: "Benglore, India",
     Accomplishments: [
@@ -14,6 +29,7 @@ export const ExperienceList = [
   {
     id: 2,
     companyName: "Nuvocliniq",
+    icon: "https://play-lh.googleusercontent.com/MATFW9MNvaxVkpCIgtPzcFXLzKoJ1i2u8TuiSsgdB1v5jHbzPZAYWHz8IL0ecWMvN36-=s188-rw",
     time: "Oct 2020 - Dec 2021",
     position: "Product Engineer and Tech Lead",
     location: "Bhopal, India",
@@ -27,6 +43,7 @@ export const ExperienceList = [
     id: 3,
     companyName: "SmartUp TechnoSoft LLP",
     time: "Nov 2018- Nov 2020",
+    icon: "https://lh3.googleusercontent.com/a/AGNmyxbyRiq0sx43L727yEZfxx-TJTzYHaNlLTGuiiPPyw=s192-c-rg-br100",
     position: "Co-Founder & CTO",
     location: "Bhopal, India",
     Accomplishments: [

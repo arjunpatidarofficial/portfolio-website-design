@@ -1,12 +1,15 @@
+import React, { memo, lazy, Suspense } from "react";
+
 import Navbar from "../components/navBar";
-import AboutMe from "../components/aboutme";
-import Skills from "../components/skills";
-import Education from "../components/education";
-import Footer from "../components/footer";
-import Experience from "../components/experience";
+
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
-import { memo } from "react";
+
+const AboutMe = lazy(() => import("../components/aboutme"));
+const Skills = lazy(() => import("../components/skills"));
+const Education = lazy(() => import("../components/education"));
+const Experience = lazy(() => import("../components/experience"));
+const Footer = lazy(() => import("../components/footer"));
 
 function Home() {
   const navigation = useNavigate();
@@ -17,6 +20,7 @@ function Home() {
 
   return (
     <div className="App bg-white h-screen overflow-y-auto customScroll">
+      {/* NavBar code */}
       <header>
         <Navbar
           aboutRef={aboutRef}
@@ -27,18 +31,18 @@ function Home() {
       </header>
       <div
         onClick={() => navigation("/achievement")}
-        className="py-2 px-5 bg-orange-600 flex justify-center cursor-pointer items-center border-b border-black sm:mt-0 mt-20"
+        className="py-2 px-5 bg-customorange flex justify-center cursor-pointer items-center border-b border-black dark:border-gray-700 sm:mt-0 mt-20"
       >
-        <p className="text-white text-center text-base">
+        <p className="dark:text-white text-white text-center">
           ABDM Hackathon series round-1 Inovation challenge 2,7,8 winner
           <i className="fa-solid fa-circle-chevron-right text-sm ml-2"></i>
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row border-b border-black">
-        <div className="flex flex-col px-10 sm:px-20 py-5 space-y-4 mt-10 sm:mt-20 w-full sm:w-1/2 bg-white">
-          <p className=" text-4xl sm:text-5xl font-bold">Hi there,</p>
+      <div className="flex flex-col sm:flex-row border-b dark:border-gray-700 dark:text-white bg-white dark:bg-base border-black ">
+        <div className="flex flex-col  px-10 sm:px-20 py-5 space-y-4 mt-10 sm:mt-20 w-full sm:w-1/2 ">
+          <p className=" text-4xl sm:text-5xl font-bold ">Hi there,</p>
           <p className="text-4xl sm:text-5xl  font-bold">
-            I'm Arjun <span className=" text-orange-600">Patidar</span>
+            I'm <span className=" text-customorange">Arjun Patidar</span>
           </p>
           <p className="text-xl font-medium">I Am Full Stack Developer</p>
           <div className="pt-3">
@@ -50,7 +54,7 @@ function Home() {
                   inline: "start",
                 });
               }}
-              className="bg-orange-500 font-medium shadow-lg w-24 text-white py-1.5"
+              className="bg-customorange font-medium shadow-lg w-24 text-white py-1.5"
             >
               Hire me
             </button>
@@ -58,7 +62,7 @@ function Home() {
               onClick={() => {
                 navigation("/projects");
               }}
-              className="bg-white font-medium ml-3 w-24 text-black py-1.5"
+              className="font-medium ml-3 w-24 text-black dark:text-white py-1.5"
             >
               Project<i className="fa-solid fa-arrow-trend-up ml-1"></i>
             </button>
@@ -81,7 +85,7 @@ function Home() {
               target="_blank"
             >
               <div className="bg-white border flex justify-center text-xl items-center border-gray-100 w-8 h-8 rounded-full shadow-lg">
-                <i className="fa-brands fa-github text-xl"></i>
+                <i className="fa-brands fa-github text-black text-xl"></i>
               </div>
             </a>
 
@@ -100,20 +104,23 @@ function Home() {
               </div> */}
           </div>
         </div>
-        <div className="w-full sm:w-1/2 h-[500px] bg-orange-100 hidden sm:flex justify-center items-center">
-          <img className="w-64 h-64  rounded-full" src="hero.png"></img>
+        <div className="w-full  sm:w-1/2 h-[500px] bg-orange-100 dark:bg-primary hidden sm:flex justify-center items-center">
+          <img className="w-64 h-64  rounded-full" src="hero.webp"></img>
         </div>
       </div>
-      <AboutMe aboutRef={aboutRef} />
-      <Skills skillsRef={skillsRef} />
-      <Education educationRef={educationRef} />
-      <Experience expRef={expRef} />
-      <Footer
-        aboutRef={aboutRef}
-        skillsRef={skillsRef}
-        educationRef={educationRef}
-        expRef={expRef}
-      />
+
+      <Suspense fallback={<p>Loading</p>}>
+        <AboutMe aboutRef={aboutRef} />
+        <Skills skillsRef={skillsRef} />
+        <Education educationRef={educationRef} />
+        <Experience expRef={expRef} />
+        <Footer
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          educationRef={educationRef}
+          expRef={expRef}
+        />
+      </Suspense>
     </div>
   );
 }

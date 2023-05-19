@@ -57,7 +57,7 @@ const Footer = ({ aboutRef, skillsRef, educationRef, expRef }) => {
                 inline: "start",
               });
             }}
-            className="hover:text-orange-600 cursor-pointer"
+            className="hover:text-orange cursor-pointer"
           >
             {" "}
             <i className="fa-solid fa-circle-chevron-right text-sm mr-2 pt-3"></i>
@@ -71,7 +71,7 @@ const Footer = ({ aboutRef, skillsRef, educationRef, expRef }) => {
                 inline: "start",
               });
             }}
-            className=" hover:text-orange-600 cursor-pointer"
+            className=" hover:text-orange cursor-pointer"
           >
             <i className="fa-solid fa-circle-chevron-right text-sm mr-2"></i>
             Skills
@@ -84,7 +84,7 @@ const Footer = ({ aboutRef, skillsRef, educationRef, expRef }) => {
                 inline: "start",
               });
             }}
-            className="hover:text-orange-600 cursor-pointer"
+            className="hover:text-orange cursor-pointer"
           >
             {" "}
             <i className="fa-solid fa-circle-chevron-right text-sm mr-2"></i>
@@ -99,7 +99,7 @@ const Footer = ({ aboutRef, skillsRef, educationRef, expRef }) => {
                 inline: "start",
               });
             }}
-            className="hover:text-orange-600 cursor-pointer"
+            className="hover:text-orange cursor-pointer"
           >
             {" "}
             <i className="fa-solid fa-circle-chevron-right text-sm mr-2"></i>
@@ -124,7 +124,7 @@ const Footer = ({ aboutRef, skillsRef, educationRef, expRef }) => {
       </div>
 
       <div className="border-t border-gray-800 flex justify-center items-center">
-        <p className="text-white mt-5 text-base">
+        <p className="text-white mt-5 text-sm">
           Designed With ❤️ By Arjun Patidar
         </p>
       </div>

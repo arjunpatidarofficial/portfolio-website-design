@@ -8,20 +8,22 @@ const Achievement = (props) => {
   return (
     <div className="overflow-y-auto customScroll h-screen">
       <Navbar />
-      <div className="border-b  bg-gray-50 pt-20 sm:pt-0 ">
-        <div className=" flex justify-center items-center h-24 text-black ">
+      <div className="border-b dark:border-gray-700  bg-gray-50 dark:bg-base dark:text-white pt-20 sm:pt-0 ">
+        <div className=" flex justify-center items-center h-24  ">
           <p className=" font-medium text-2xl">Achievements</p>
         </div>
         <div className="py-10 flex flex-col sm:flex-row px-5 sm:px-20">
           <div className="w-full sm:w-1/2 flex flex-col space-y-5 items-start">
-            <img className=" rounded-md shadow-lg" src="/hachethon-1.jpg"></img>
-            <img className=" rounded-md shadow-lg" src="/hachethon-1.jpg"></img>
+            <img
+              className=" rounded-md shadow-lg"
+              src="/hachethon-1.webp"
+            ></img>
           </div>
 
           <div className="w-full sm:w-1/2 mt-10 sm:mt-0 px-5 sm:pl-10 sm:pr-20">
             <p className="text-xl font-bold">ABDM Hackethon Winner</p>
             <p className="text-sm mt-1 font-medium">National Health Athority</p>
-            <p className="mt-4 text-gray-600 text-sm mb-3">
+            <p className="mt-4 text-gray-600 dark:text-gray-300 text-sm mb-3">
               It’s an honor for me to receive “Ayushmann Utkrishtata Puraskaar”
               from Mansukh Mandaviya (Health Minister), Dr. RS Sharma (CEO,
               NHA), Kiran Gopal Vaska (Director, NHA) in Arogya Manthan -
@@ -32,7 +34,7 @@ const Achievement = (props) => {
               "HealthTalk" and awarded it first prize in the top challenge and
               second prize in two other challenges.
             </p>
-            <p className="mt-4 text-gray-600 text-sm mb-3">
+            <p className="mt-4 text-gray-600 dark:text-gray-300 text-sm mb-3">
               We realized that India lacks digitization in healthcare and the
               absence of an open teleconsultation platform with multi-faceted
               facilities like interoperability, online transaction, multi-cat,
@@ -45,7 +47,7 @@ const Achievement = (props) => {
               connect doctors, and patients and digitalized all
               healthcare-related organization/communication.
             </p>
-            <p className="text-gray-600 text-sm mb-3">
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
               We are also glad to announce that our solution was not just
               appreciated and approached by various hospitals, insurance
               companies, VCs and investors as well and we are in further
@@ -56,7 +58,7 @@ const Achievement = (props) => {
               href="https://abdm.gov.in/hackathon"
               className=""
             >
-              <button className="bg-orange-500 font-medium text-sm mt-5 sm:mt-0 rounded text-white py-1.5 px-3">
+              <button className="bg-customorange font-medium text-sm mt-5 sm:mt-0 rounded text-white py-1.5 px-3">
                 More Information
               </button>
             </a>
@@ -64,8 +66,8 @@ const Achievement = (props) => {
         </div>
       </div>
 
-      <div className=" bg-gray-50">
-        <div className=" flex justify-center items-center h-24 text-black ">
+      <div className=" bg-gray-50 dark:bg-base dark:text-white">
+        <div className=" flex justify-center items-center h-24  ">
           <p className=" font-medium text-2xl">Hackathon Product</p>
         </div>
         <div className="py-10 flex-col flex sm:flex-row px-5 sm:px-20">
@@ -85,7 +87,7 @@ const Achievement = (props) => {
           <div className="w-full sm:w-4/5 sm:pl-10 my-5 sm:mb-4 px-5 sm:pr-28">
             <p className="text-xl font-bold">HealthTalk</p>
             <p className="text-sm mt-1 font-medium">National Health Athority</p>
-            <div className="mt-4 space-y-3 text-black font-medium mb-3">
+            <div className="mt-4 space-y-3  font-medium mb-3">
               <p> Features:</p>
               <p>
                 • HealthTalk has developed separate Application for Patient
