@@ -3,7 +3,7 @@
 
 As a free gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile
 
-![Logo](https://arjunpatidar.me/photo.png)
+![Logo](https://lh3.googleusercontent.com/a/AEdFTp7cpSus6NaUXETUR4AI2S8gcMW0p9V_nOIqn7uB0Q=s432-p-rw-no)
 
 
 ## Demo
